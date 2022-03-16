@@ -13,6 +13,8 @@ public class Restaurant {
     private String name;
     private String imageURL;
 
+    public Restaurant() {
+    }
 
     public Integer getId() {
         return this.id;
@@ -38,6 +40,4 @@ public class Restaurant {
         this.imageURL = imageURL;
     }
 
-    
 }
- 
