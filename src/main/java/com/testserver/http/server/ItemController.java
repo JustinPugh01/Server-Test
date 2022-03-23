@@ -1,5 +1,6 @@
 package com.testserver.http.server;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,5 +24,9 @@ public class ItemController {
         return itemRepo.save(itemData);
     }
 
+    //@DeleteMapping("/restaurants/{restaurant_id}/menus/{menu_id}/items/[item_id}")
+   // public void delete(@PathVariable Integer id) {
+   //     itemRepo.deleteById(id);
+    //}
     
 }
