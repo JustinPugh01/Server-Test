@@ -12,8 +12,9 @@
     </header>
     <ul>
         <li><a href="">Home</a></li>
-        <li><a href=#deletesection>Delete Restaurants</a></li>
-        <li><a href= #formbackground>Update Restaurants</a></li>
+        <li><a href= #formbackground>Delete Restaurants</a></li>
+        <li><a href= #formbackground>Create Restaurants</a></li>
+        <li><a href= #updateRestaurant>Update Restaurants</a></li>
         <li><a href="">Help</a></li>
       </ul>
 <body class="backgroundimage" style="background-image : url(https://media.istockphoto.com/vectors/vector-set-of-design-templates-and-elements-for-restaurant-and-food-vector-id1125926284?k=20&m=1125926284&s=612x612&w=0&h=boWvHoFXEEqLpwxGFC65V3i4vRuoOpVuBbYvBfvaZ-g=);">
@@ -21,4 +22,18 @@
     <section style = "background-image: url('https://i.pinimg.com/originals/69/e5/b4/69e5b4a04aa27c60fc2467fe3168f839.jpg');"id="model"></section>
     <script src = "/main.js" ></script>
 </body>
+<footer id="updateRestaurant">
+    </article>
+        <form id = "formbackground" onsubmit="updateRestaurant(this);">
+            <h2> Update a Restaurant</h2>
+            <label> Restaurant ID number </label>
+            <input name="id" type="number" required/>
+            <label> New name </label>
+            <input name="name"required/>
+            <label> New Image URL </label>
+            <input name="imageURL" type="url" required/>
+            <button> Update Restaurant</button>
+        </form>
+    </article>
+</footer>
 </html>

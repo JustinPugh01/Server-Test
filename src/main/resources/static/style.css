@@ -28,6 +28,7 @@ main {
     grid-auto-rows: auto;
     width:95vw;
     margin-left: 4rem;
+    margin-bottom: 30rem;
 }
 article{
     border:solid 3px black;
@@ -51,11 +52,12 @@ form{
     background-color: rgba(189, 189, 189, 0.7);
     text-align: center;
     padding-bottom: 4.3rem;
-}
+}  
 article div {
     height: 20rem;
     background-size:cover;
     size: 20vmax;
+    background-position: center;
 }
 .restaurantname{
     color: black; 

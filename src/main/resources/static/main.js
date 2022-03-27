@@ -78,6 +78,25 @@ function deleteRestaurant(HTMLform){
    })
    
 }
+function updateRestaurant(HTMLform){
+    const uprestaurant = new FormData(HTMLform)
+    const id = uprestaurant.get('id')
+    const name = uprestaurant.get('name')
+    const imageURL = uprestaurant.get('imageURL')
+
+    fetch(`/restaurants/${id}`,{
+        method:'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+          },
+          body:JSON.stringify({name, imageURL})
+    })
+    .then(response => response.json())
+    .then(_data => {
+        data = _data
+        render()
+   })
+}
 
 
 function render() {
